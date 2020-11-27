@@ -32,15 +32,13 @@ const alterDOM = (res) => {
     wc.classList.add('d-none')
   })
 
+  // shows relevant animation-box
+
   if (wType === 'Clouds') {
     cloud.classList.remove('d-none')
-  }
-
-  else if (wType === 'Clear') {
+  } else if (wType === 'Clear') {
     clear.classList.remove('d-none')
-  }
-
-  else if (wType === 'Thunderstorm' || wType === 'Rain' || wType === 'Dizzle') {
+  } else if (wType === 'Thunderstorm' || wType === 'Rain' || wType === 'Dizzle') {
     rain.classList.remove('d-none')
   } else {
     partly.classList.remove('d-none')

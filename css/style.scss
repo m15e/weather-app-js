@@ -26,7 +26,7 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  height: 100vh;
+  
 }
 
 .weather-container {
@@ -42,4 +42,21 @@
 
 .d-none {
   display: none;
+}
+
+.top-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.logo-container {
+  font-family: 'Chicle', cursive;
+  
+  text-align: center;
+  img {
+    width: 150px;
+    margin: 2rem auto;
+  }
 }
