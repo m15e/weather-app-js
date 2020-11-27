@@ -35,10 +35,24 @@
   height: 320px;
   border-radius: 12px;
   margin: 4%;
+  padding: 30px;
   overflow: hidden;
+  color: #fff;
   box-shadow: 0 50px 100px rgba(50,50,93,.05),
               0 15px 35px rgba(50,50,93,.1),
               0 5px 15px rgba(0,0,0,.1);
+  
+  h2,
+  h3,
+  p {
+    color: #fff!important;
+  }
+  .temp {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+  }
+  
 }
 
 #locQuery, #getWeather, .weather-container {
@@ -90,3 +104,4 @@
     margin-bottom: 30px;
   }
 }
+

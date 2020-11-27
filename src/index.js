@@ -1,3 +1,43 @@
+const helpr = (() => {
+  const addChildren = (parent, items) => {
+    items.forEach(el => {
+      parent.appendChild(el);
+    });
+  };
+
+  const qs = (selector) => {
+    return document.querySelector(selector)
+  }
+
+  const textEl = (elType, elText) => {
+    const res = document.createElement(elType);
+    res.innerHTML = elText;
+
+    return res;
+  };
+
+  const classyDiv = (className) => {
+    const res = document.createElement('div');
+    res.setAttribute('class', className);
+
+    return res;
+  };
+
+  const cel = (el, className = '') => {
+    const res = document.createElement(el);
+    if (className !== '') {
+      res.setAttribute('class', className);
+    }
+    return res;
+  };
+
+  const nthParent = (elem, n) => (n === 0 ? elem : nthParent(elem.parentNode, n - 1));
+
+  return {
+    qs, addChildren, textEl, classyDiv, cel, nthParent
+  };
+})();
+
 // constants
 
 const key = '0028ea367b25a551e7348f7875810282';
@@ -8,9 +48,21 @@ weatherContainers.forEach(wc => {
   wc.classList.add('d-none')
 })
 
+const manyEls = (parent, arr) => {
+  arr.forEach((el, ix) => {
+    let item = helpr.cel(el[0], el[1])
+    if (el.length === 3) {
+      item.innerHTML = el[2]
+    }
+    //console.log(pfStart)
+    parent.appendChild(item)
+  })
+}
+
 const alterDOM = (res) => {
   // relevant response items
   let place = res['name']
+  let country = res['sys'].country
   let temp = res['main'].temp
   let feels = res['main'].feels_like
   let weather = res['weather'][0]
@@ -26,22 +78,27 @@ const alterDOM = (res) => {
   // dev testing vars
   console.log(res)
   console.log('\n')
-  console.log(wType)
+  console.log(country)
 
   weatherContainers.forEach(wc => {
     wc.classList.add('d-none')
   })
 
   // shows relevant animation-box
+  let resArr = [['h2', 'place title is-4', place], ['h3', 'temp title is-2', temp], ['p', 'detail', wDetail]]
 
   if (wType === 'Clouds') {
     cloud.classList.remove('d-none')
+    manyEls(cloud, resArr)
   } else if (wType === 'Clear') {
     clear.classList.remove('d-none')
+    manyEls(clear, resArr)
   } else if (wType === 'Thunderstorm' || wType === 'Rain' || wType === 'Dizzle') {
     rain.classList.remove('d-none')
+    manyEls(rain, resArr)
   } else {
     partly.classList.remove('d-none')
+    manyEls(partly, resArr)
   }
 }
 
@@ -69,7 +126,7 @@ const getit = document.querySelector('#getWeather')
 
 getit.onclick = function () {
   let locQuery = document.querySelector('#locQuery').value
-  locQuery = 'canada'
+  locQuery = 'barcelona'
   if (locQuery.length > 0) {
     getWeather(locQuery).catch(e => {
       console.log('There has been a problem with your fetch operation: ' + e.message);
