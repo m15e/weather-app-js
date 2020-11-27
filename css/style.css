@@ -1005,10 +1005,25 @@
   position: relative;
   width: 375px;
   height: 320px;
+  border-radius: 12px;
   margin: 4%;
   overflow: hidden;
   -webkit-box-shadow: 0 50px 100px rgba(50, 50, 93, 0.05), 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
           box-shadow: 0 50px 100px rgba(50, 50, 93, 0.05), 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#locQuery, #getWeather, .weather-container {
+  border-radius: 12px !important;
+}
+
+.btn-bg {
+  background-color: #4456fb !important;
+  color: #fff !important;
+  font-weight: bold;
+}
+
+.is-4 {
+  padding-left: 0 !important;
 }
 
 .d-none {
