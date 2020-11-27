@@ -62,6 +62,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
+- Animation Design: [author: @vai0](https://github.com/vai0/alarmclockweather_animations) 
 - Many thanks to all of my peers and colleagues from Microverse.
 - This assignment was taken from [The Odin Project](https://www.theodinproject.com/home)'s Web Development course, which is available for free.
 - This project depends on information served by two APIs: [OpenWeatherMap](https://openweathermap.org/) and [Colr](http://www.colr.org).

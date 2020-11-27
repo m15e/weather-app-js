@@ -1,0 +1,582 @@
+@keyframes pan {
+  0% {
+    transform: translateX(0%); }
+  100% {
+    transform: translateX(105%) scaleX(1.3);
+    opacity: 0.4; } }
+
+@keyframes panNoFade {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(375px) scaleX(1.1); } }
+
+.clear-day {
+  background-image: linear-gradient(to bottom, #F84E66 0%, #FADE62 100%); }
+  .clear-day .cloud {
+    position: relative;
+    animation: pan 60s linear infinite; }
+    .clear-day .cloud .circle {
+      position: absolute;
+      background-color: white;
+      border-radius: 50%; }
+    .clear-day .cloud .c-one {
+      top: 150px;
+      left: 19px;
+      width: 30px;
+      height: 30px; }
+    .clear-day .cloud .c-two {
+      top: 154px;
+      left: 9px;
+      width: 22px;
+      height: 22px; }
+    .clear-day .cloud .c-three {
+      top: 158px;
+      left: 44px;
+      width: 13px;
+      height: 13px; }
+  .clear-day .sun {
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    bottom: -80px;
+    left: 35%;
+    width: 140px;
+    height: 140px; }
+  .clear-day .sun-ray {
+    position: absolute;
+    border-radius: 50%;
+    background-color: white; }
+  .clear-day .r-one {
+    bottom: -160px;
+    left: 30%;
+    width: 270px;
+    height: 270px;
+    opacity: 0.2;
+    animation: ray2 5s infinite; }
+  .clear-day .r-two {
+    bottom: -180px;
+    left: 10%;
+    width: 280px;
+    height: 280px;
+    opacity: 0.2;
+    animation: ray3 7s infinite; }
+  .clear-day .r-three {
+    bottom: -160px;
+    left: 19%;
+    width: 230px;
+    height: 230px;
+    opacity: 0.3;
+    animation: ray4 4s infinite; }
+  .clear-day .r-four {
+    bottom: -160px;
+    left: 28%;
+    width: 240px;
+    height: 240px;
+    opacity: 0.3;
+    animation: ray5 6s infinite; }
+
+@keyframes ray2 {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.2);
+    opacity: 0; }
+  100% {
+    transform: scale(1); } }
+
+@keyframes ray3 {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.2);
+    opacity: 0; }
+  100% {
+    transform: scale(1); } }
+
+@keyframes ray4 {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.2);
+    opacity: 0; }
+  100% {
+    transform: scale(1); } }
+
+@keyframes ray5 {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.2);
+    opacity: 0; }
+  100% {
+    transform: scale(1); } }
+
+.partly-cloudy {
+  background-image: linear-gradient(to bottom, #3EE0F7 0%, #5089F4 100%); }
+  .partly-cloudy .circle {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%; }
+  .partly-cloudy .cloudleft {
+    position: relative;
+    top: 40px;
+    animation: pan 80s linear infinite; }
+    .partly-cloudy .cloudleft .c-one {
+      top: 0;
+      left: -35px;
+      width: 71px;
+      height: 71px; }
+    .partly-cloudy .cloudleft .c-two {
+      top: 20px;
+      left: 23px;
+      width: 33px;
+      height: 33px; }
+  .partly-cloudy .cloudbottom {
+    position: relative;
+    top: 250px;
+    left: 45px;
+    animation: pan 120s linear infinite; }
+    .partly-cloudy .cloudbottom .c-one {
+      left: 40px;
+      width: 103px;
+      height: 103px; }
+    .partly-cloudy .cloudbottom .c-two {
+      top: 35px;
+      width: 65px;
+      height: 63px; }
+    .partly-cloudy .cloudbottom .c-three {
+      top: 50px;
+      left: 130px;
+      width: 38px;
+      height: 38px; }
+    .partly-cloudy .cloudbottom .c-four {
+      top: 13px;
+      left: 165px;
+      width: 24px;
+      height: 24px; }
+  .partly-cloudy .cloudright {
+    position: relative;
+    top: 210px;
+    left: 350px;
+    animation: pan 180s linear infinite; }
+    .partly-cloudy .cloudright .c-one {
+      width: 49px;
+      height: 49px; }
+
+.cloudy {
+  background-image: linear-gradient(to bottom, #A9AEB1 0%, #EBECEC 100%); }
+  .cloudy .cloud-one {
+    position: relative;
+    top: 50px;
+    left: -30px;
+    animation: pan 90s linear infinite; }
+    .cloudy .cloud-one .circle {
+      position: absolute;
+      background-color: white;
+      border-radius: 50%; }
+    .cloudy .cloud-one .c-one {
+      left: 15px;
+      width: 48px;
+      height: 48px; }
+    .cloudy .cloud-one .c-two {
+      top: 15px;
+      width: 22px;
+      height: 22px; }
+    .cloudy .cloud-one .c-three {
+      top: 8px;
+      left: 45px;
+      width: 32px;
+      height: 32px; }
+  .cloudy .cloud-two {
+    position: relative;
+    top: 180px;
+    left: 45px;
+    animation: pan 60s linear infinite; }
+    .cloudy .cloud-two .circle {
+      position: absolute;
+      background-color: white;
+      border-radius: 50%; }
+    .cloudy .cloud-two .c-one {
+      left: 13px;
+      width: 44px;
+      height: 44px; }
+    .cloudy .cloud-two .c-two {
+      top: 15px;
+      width: 20px;
+      height: 20px; }
+    .cloudy .cloud-two .c-three {
+      top: 18px;
+      left: 61px;
+      width: 17px;
+      height: 17px; }
+  .cloudy .cloud-three {
+    position: relative;
+    top: 130px;
+    left: 290px;
+    animation: pan 80s linear infinite; }
+    .cloudy .cloud-three .circle {
+      position: absolute;
+      background-color: white;
+      border-radius: 50%; }
+    .cloudy .cloud-three .c-one {
+      left: 11px;
+      width: 30px;
+      height: 30px; }
+    .cloudy .cloud-three .c-two {
+      top: 6px;
+      width: 20px;
+      height: 20px; }
+    .cloudy .cloud-three .c-three {
+      top: 9px;
+      left: 37px;
+      width: 14px;
+      height: 14px; }
+  .cloudy .cloud-four {
+    position: relative;
+    top: 245px;
+    animation: pan 35s linear infinite; }
+    .cloudy .cloud-four .circle {
+      position: absolute;
+      background-color: white;
+      border-radius: 50%; }
+    .cloudy .cloud-four .c-one {
+      left: 45px;
+      width: 118px;
+      height: 118px; }
+    .cloudy .cloud-four .c-two {
+      top: 40px;
+      width: 72px;
+      height: 72px; }
+    .cloudy .cloud-four .c-three {
+      top: 58px;
+      left: 150px;
+      width: 43px;
+      height: 43px; }
+  .cloudy .cloud-five {
+    position: relative;
+    top: 275px;
+    left: 185px;
+    animation: pan 50s linear infinite; }
+    .cloudy .cloud-five .circle {
+      position: absolute;
+      background-color: white;
+      border-radius: 50%; }
+    .cloudy .cloud-five .c-one {
+      width: 71px;
+      height: 71px; }
+    .cloudy .cloud-five .c-two {
+      top: 18px;
+      left: 57px;
+      width: 33px;
+      height: 33px; }
+  .cloudy .cloud-six {
+    position: relative;
+    top: 305px;
+    left: 250px;
+    animation: pan 30s linear infinite; }
+    .cloudy .cloud-six .circle {
+      position: absolute;
+      background-color: white;
+      border-radius: 50%; }
+    .cloudy .cloud-six .c-one {
+      left: 11px;
+      width: 30px;
+      height: 30px; }
+    .cloudy .cloud-six .c-two {
+      top: 6px;
+      width: 20px;
+      height: 20px; }
+    .cloudy .cloud-six .c-three {
+      top: 9px;
+      left: 37px;
+      width: 14px;
+      height: 14px; }
+  .cloudy .cloud-seven {
+    position: relative;
+    top: 225px;
+    left: 298px;
+    animation: pan 40s linear infinite; }
+    .cloudy .cloud-seven .circle {
+      position: absolute;
+      background-color: white;
+      border-radius: 50%; }
+    .cloudy .cloud-seven .c-one {
+      left: 28px;
+      width: 118px;
+      height: 118px; }
+    .cloudy .cloud-seven .c-two {
+      top: 65px;
+      width: 43px;
+      height: 43px; }
+    .cloudy .cloud-seven .c-three {
+      top: 35px;
+      left: 118px;
+      width: 72px;
+      height: 72px; }
+  .cloudy .cloud-eight {
+    position: relative;
+    left: -375px;
+    top: 245px;
+    animation: pan 35s linear infinite; }
+    .cloudy .cloud-eight .circle {
+      position: absolute;
+      background-color: white;
+      border-radius: 50%; }
+    .cloudy .cloud-eight .c-one {
+      left: 45px;
+      width: 118px;
+      height: 118px; }
+    .cloudy .cloud-eight .c-two {
+      top: 40px;
+      width: 72px;
+      height: 72px; }
+    .cloudy .cloud-eight .c-three {
+      top: 58px;
+      left: 150px;
+      width: 43px;
+      height: 43px; }
+  .cloudy .cloud-nine {
+    position: relative;
+    top: 275px;
+    left: -190px;
+    animation: pan 45s linear infinite; }
+    .cloudy .cloud-nine .circle {
+      position: absolute;
+      background-color: white;
+      border-radius: 50%; }
+    .cloudy .cloud-nine .c-one {
+      width: 71px;
+      height: 71px; }
+    .cloudy .cloud-nine .c-two {
+      top: 18px;
+      left: 57px;
+      width: 33px;
+      height: 33px; }
+  .cloudy .cloud-ten {
+    position: relative;
+    top: 305px;
+    left: -125px;
+    animation: pan 35s linear infinite; }
+    .cloudy .cloud-ten .circle {
+      position: absolute;
+      background-color: white;
+      border-radius: 50%; }
+    .cloudy .cloud-ten .c-one {
+      left: 11px;
+      width: 30px;
+      height: 30px; }
+    .cloudy .cloud-ten .c-two {
+      top: 6px;
+      width: 20px;
+      height: 20px; }
+    .cloudy .cloud-ten .c-three {
+      top: 9px;
+      left: 37px;
+      width: 14px;
+      height: 14px; }
+  .cloudy .cloud-eleven {
+    position: relative;
+    top: 225px;
+    left: -77px;
+    animation: pan 65s linear infinite; }
+    .cloudy .cloud-eleven .circle {
+      position: absolute;
+      background-color: white;
+      border-radius: 50%; }
+    .cloudy .cloud-eleven .c-one {
+      left: 28px;
+      width: 118px;
+      height: 118px; }
+    .cloudy .cloud-eleven .c-two {
+      top: 65px;
+      width: 43px;
+      height: 43px; }
+    .cloudy .cloud-eleven .c-three {
+      top: 35px;
+      left: 118px;
+      width: 72px;
+      height: 72px; }
+  .cloudy .cloud-twelve {
+    position: relative;
+    top: 130px;
+    left: -85px;
+    animation: pan 40s linear infinite; }
+    .cloudy .cloud-twelve .circle {
+      position: absolute;
+      background-color: white;
+      border-radius: 50%; }
+    .cloudy .cloud-twelve .c-one {
+      left: 11px;
+      width: 30px;
+      height: 30px; }
+    .cloudy .cloud-twelve .c-two {
+      top: 6px;
+      width: 20px;
+      height: 20px; }
+    .cloudy .cloud-twelve .c-three {
+      top: 9px;
+      left: 37px;
+      width: 14px;
+      height: 14px; }
+
+.rain {
+  background-image: linear-gradient(to bottom, #2DAFF6 0%, #75FAE2 100%); }
+  .rain .cloud-one {
+    position: relative;
+    top: -65px;
+    animation: panNoFade 80s linear infinite; }
+    .rain .cloud-one .circle {
+      position: absolute;
+      background-color: white;
+      border-radius: 50%; }
+    .rain .cloud-one .c-one {
+      left: 15px;
+      width: 118px;
+      height: 118px; }
+    .rain .cloud-one .c-two {
+      top: 50px;
+      left: -30px;
+      width: 72px;
+      height: 72px; }
+    .rain .cloud-one .c-three {
+      top: 50px;
+      left: 120px;
+      width: 43px;
+      height: 43px; }
+    .rain .cloud-one .c-four {
+      top: 50px;
+      left: 160px;
+      width: 29px;
+      height: 29px; }
+  .rain .cloud-two {
+    position: relative;
+    top: -70px;
+    left: -210px;
+    animation: panNoFade 70s linear infinite; }
+    .rain .cloud-two .circle {
+      position: absolute;
+      background-color: white;
+      border-radius: 50%; }
+    .rain .cloud-two .c-one {
+      left: 28px;
+      width: 118px;
+      height: 118px; }
+    .rain .cloud-two .c-two {
+      top: 65px;
+      width: 43px;
+      height: 43px; }
+    .rain .cloud-two .c-three {
+      top: 35px;
+      left: 118px;
+      width: 72px;
+      height: 72px; }
+  .rain .cloud-three {
+    position: relative;
+    top: 275px;
+    left: 275px;
+    animation: panNoFade 100s linear infinite; }
+    .rain .cloud-three .circle {
+      position: absolute;
+      background-color: white;
+      border-radius: 50%; }
+    .rain .cloud-three .c-one {
+      left: 30px;
+      width: 73px;
+      height: 73px; }
+    .rain .cloud-three .c-two {
+      top: 25px;
+      width: 49px;
+      height: 49px; }
+  .rain .droplet-container {
+    position: relative;
+    left: -200px;
+    width: 375px;
+    height: 100%;
+    animation: panNoFade 70s linear infinite; }
+  .rain .droplet {
+    position: absolute;
+    top: -200px;
+    width: 1px;
+    height: 100px;
+    background-color: white;
+    border-radius: 5px;
+    animation: fall 3s linear infinite; }
+
+@keyframes fall {
+  0% {
+    transform: translate(0, 0) rotate(-8deg); }
+  100% {
+    transform: translate(417px, 3000px); } }
+
+.snow {
+  background-image: linear-gradient(to bottom, #B4D6FC 0%, #9CAADE 100%); }
+  .snow .snowflake-container {
+    position: relative;
+    left: -10%;
+    width: 120%;
+    height: 100%; }
+    .snow .snowflake-container .snowflake {
+      position: absolute;
+      top: -30px;
+      height: 20px;
+      width: 20px;
+      background-color: white;
+      border-radius: 50%;
+      z-index: 9999;
+      animation: snowfalling 10s linear infinite, snowdrifting 4s ease-in-out infinite; }
+  .snow .circle {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%; }
+  .snow .cloud-one {
+    position: relative;
+    top: 255px;
+    left: -100px;
+    animation: panNoFade 80s linear infinite; }
+    .snow .cloud-one .circle {
+      position: absolute;
+      background-color: white;
+      border-radius: 50%; }
+    .snow .cloud-one .c-one {
+      left: 45px;
+      width: 118px;
+      height: 118px; }
+    .snow .cloud-one .c-two {
+      top: 40px;
+      width: 72px;
+      height: 72px; }
+    .snow .cloud-one .c-three {
+      top: 58px;
+      left: 150px;
+      width: 43px;
+      height: 43px; }
+
+@keyframes snowfalling {
+  0% {
+    top: -20%; }
+  100% {
+    top: 120%; } }
+
+@keyframes snowdrifting {
+  0% {
+    transform: translateX(0); }
+  50% {
+    transform: translateX(40px); }
+  100% {
+    transform: translateX(0); } }
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh; }
+
+.weather-container {
+  position: relative;
+  width: 375px;
+  height: 320px;
+  margin: 4%;
+  overflow: hidden;
+  box-shadow: 0 50px 100px rgba(50, 50, 93, 0.05), 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1); }
