@@ -19,6 +19,7 @@ To quickly see the project in action, check the [Live Demo](LIVELINKMISSING).
 - Sass
 - Bootstrap
 - Font Awesome
+- [CSS Toggle Switch](https://github.com/ghinda/css-toggle-switch)
 
 ## Getting Started
 

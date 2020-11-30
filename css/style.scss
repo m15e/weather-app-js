@@ -109,20 +109,27 @@
   }
 }
 
-.switch-ios {
-  display: block;
+
+.switch-material {    
   width: 80px;
   position: fixed!important;
+  text-align: center;
   top: 15px;
   right: 30px;
+  opacity: 0;
   
   strong {
     color: grey;
-    font-size: 11px;
-    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;    
     line-height: 0.9;    
   }
+}
 
+
+
+.switch-material > span {
+  margin: 3px auto;
 }
 
 

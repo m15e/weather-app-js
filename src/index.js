@@ -54,7 +54,6 @@ const manyEls = (parent, arr) => {
     if (el.length === 3) {
       item.innerHTML = el[2]
     }
-    //console.log(pfStart)
     parent.appendChild(item)
   })
 }
@@ -69,16 +68,16 @@ const alterDOM = (res) => {
   let wType = weather.main
   let wDetail = weather.description
 
-  // DOM elements
+  // DOM elements 
   let cloud = document.querySelector('.cloudy')
   let clear = document.querySelector('.clear-day')
   let rain = document.querySelector('.rain')
   let partly = document.querySelector('.partly-cloudy')
 
-  // dev testing vars
-  console.log(res)
-  console.log('\n')
-  console.log(country)
+
+  // make string from temp
+  temp = temp.toString().split('.')[0] + ' F°'
+
 
   weatherContainers.forEach(wc => {
     wc.classList.add('d-none')
@@ -114,6 +113,7 @@ async function getWeather(l) {
   } else {
     let res = await response.json();
     alterDOM(res)
+    document.querySelector('.switch-light').style.opacity = 0.5;
   }
 }
 
@@ -124,6 +124,27 @@ async function getWeather(l) {
 
 
 const getit = document.querySelector('#getWeather')
+const tempSwap = document.querySelector('input[type="checkbox"]')
+var isCelsius = false
+
+tempSwap.onclick = function () {
+  let tempEl = document.querySelector('.temp')
+  let temp = parseFloat(tempEl.innerHTML.split(' ')[0])
+
+  const tempType = (el) => {
+    let res = el.innerHTML.toString().split('').splice(-2)[0]
+    return res
+  }
+
+  if (tempType(tempEl) === 'F') {
+    let tempStr = ((temp - 32) * (5 / 9)).toString().split('.')[0]
+    tempEl.innerHTML = tempStr + ' C°'
+  } else if (tempType(tempEl) === 'C') {
+    let tempStr = (temp * (9 / 5) + 32).toString().split('.')[0]
+    tempEl.innerHTML = tempStr + ' F°'
+  }
+
+}
 
 
 
@@ -139,7 +160,7 @@ getit.onclick = function () {
   }
 }
 
-//getit.click()
+getit.click()
 
 document.querySelector('.input-container').addEventListener('keypress', (e) => {
   if (e.key === 'Enter') {
@@ -153,6 +174,9 @@ document.querySelector('.input-container').addEventListener('keypress', (e) => {
 
 
 document.querySelector('#locQuery').focus();
+
+
+// 
 
 
 // RUBRIC
