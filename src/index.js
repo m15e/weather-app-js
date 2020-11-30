@@ -85,7 +85,7 @@ const alterDOM = (res) => {
   })
 
   // shows relevant animation-box
-  let resArr = [['h2', 'place title is-4', place], ['h3', 'temp title is-2', temp], ['p', 'detail', wDetail]]
+  let resArr = [['h2', 'place title is-3', place], ['h3', 'temp title is-2', temp], ['p', 'detail', wDetail]]
 
   if (wType === 'Clouds') {
     cloud.classList.remove('d-none')
@@ -106,6 +106,7 @@ const alterDOM = (res) => {
 
 async function getWeather(l) {
   let fetchURL = url + `${l}&appid=${key}`
+  console.log(fetchURL)
   let response = await fetch(fetchURL)
 
   if (!response.ok) {
@@ -123,10 +124,11 @@ async function getWeather(l) {
 
 
 const getit = document.querySelector('#getWeather')
+const locInput = document.querySelector('#locQuery')
+
 
 getit.onclick = function () {
   let locQuery = document.querySelector('#locQuery').value
-  locQuery = 'barcelona'
   if (locQuery.length > 0) {
     getWeather(locQuery).catch(e => {
       console.log('There has been a problem with your fetch operation: ' + e.message);
@@ -137,7 +139,14 @@ getit.onclick = function () {
   }
 }
 
-getit.click()
+
+//getit.click()
+
+document.querySelector('.input-container').addEventListener('keypress', (e) => {
+  if (e.key === 'Enter') {
+    getit.click()
+  }
+})
 
 
 
