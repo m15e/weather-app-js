@@ -85,7 +85,7 @@ const alterDOM = (res) => {
   })
 
   // shows relevant animation-box
-  let resArr = [['h2', 'place title is-3', place], ['h3', 'temp title is-2', temp], ['p', 'detail', wDetail]]
+  let resArr = [['h2', 'place', place], ['h3', 'temp title is-3', temp], ['p', 'detail', wDetail]]
 
   if (wType === 'Clouds') {
     cloud.classList.remove('d-none')
@@ -124,7 +124,7 @@ async function getWeather(l) {
 
 
 const getit = document.querySelector('#getWeather')
-const locInput = document.querySelector('#locQuery')
+
 
 
 getit.onclick = function () {
@@ -139,7 +139,6 @@ getit.onclick = function () {
   }
 }
 
-
 //getit.click()
 
 document.querySelector('.input-container').addEventListener('keypress', (e) => {
@@ -150,10 +149,10 @@ document.querySelector('.input-container').addEventListener('keypress', (e) => {
 
 
 
+// startup behaviour 
 
 
-
-
+document.querySelector('#locQuery').focus();
 
 
 // RUBRIC
