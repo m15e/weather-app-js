@@ -4,7 +4,7 @@ const manyEls = (parent, arr) => {
   arr.forEach((el) => {
     const item = helpr.cel(el[0], el[1]);
     if (el.length === 3) {
-      item.innerHTML = el[2];
+      item.innerHTML = el[2].toString();
     }
     parent.appendChild(item);
   });
@@ -39,7 +39,7 @@ const alterDOM = (res) => {
   const updateEls = (parent, Arr) => {
     Arr.forEach(el => {
       const item = parent.querySelector(el[0]);
-      item.innerHTML = el[2];
+      item.innerHTML = el[2].toString();
     });
   };
 

@@ -42,7 +42,7 @@ getit.onclick = function () {
   const locQuery = document.querySelector('#locQuery').value;
   if (locQuery.length > 0) {
     getWeather(url, locQuery, key).catch(e => {
-      console.log(`There has been a problem with your fetch operation: ${e.message}`);
+      alert(`There has been a problem with your fetch operation: ${e.message}`);
     });
     document.querySelector('#locQuery').value = '';
   } else {
