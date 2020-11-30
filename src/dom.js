@@ -8,6 +8,7 @@ const manyEls = (parent, arr) => {
     }
     parent.appendChild(item)
   })
+  parent.setAttribute('data-in', true)
 }
 
 const alterDOM = (res) => {
@@ -39,18 +40,41 @@ const alterDOM = (res) => {
   // shows relevant animation-box
   let resArr = [['h2', 'place', place], ['h3', 'temp title is-3', temp], ['p', 'detail', wDetail]]
 
+  const updateEls = (parent, Arr) => {
+    Arr.forEach(el => {
+      let item = parent.querySelector(el[0])
+      item.innerHTML = el[2]
+    })
+  }
+
   if (wType === 'Clouds') {
     cloud.classList.remove('d-none')
-    manyEls(cloud, resArr)
+    if (cloud.getAttribute('data-in')) {
+      updateEls(cloud, resArr)
+    } else {
+      manyEls(cloud, resArr)
+    }
   } else if (wType === 'Clear') {
     clear.classList.remove('d-none')
-    manyEls(clear, resArr)
+    if (clear.getAttribute('data-in')) {
+      updateEls(clear, resArr)
+    } else {
+      manyEls(clear, resArr)
+    }
   } else if (wType === 'Thunderstorm' || wType === 'Rain' || wType === 'Dizzle') {
     rain.classList.remove('d-none')
-    manyEls(rain, resArr)
+    if (rain.getAttribute('data-in')) {
+      updateEls(rain, resArr)
+    } else {
+      manyEls(rain, resArr)
+    }
   } else {
     partly.classList.remove('d-none')
-    manyEls(partly, resArr)
+    if (partly.getAttribute('data-in')) {
+      updateEls(partly, resArr)
+    } else {
+      manyEls(partly, resArr)
+    }
   }
 }
 

@@ -47,9 +47,11 @@ getit.onclick = function () {
     getWeather(url, locQuery, key).catch(e => {
       console.log('There has been a problem with your fetch operation: ' + e.message);
     });
+    document.querySelector('#locQuery').value = ''
   } else {
     let inEl = document.querySelector('#locQuery')
     inEl.setAttribute('placeholder', 'Try another location')
+    inEl.value = ''
   }
 }
 
@@ -61,7 +63,7 @@ document.querySelector('.input-container').addEventListener('keypress', (e) => {
   }
 })
 
-document.addEventListener('DOMContentLoaded', animate())
+//document.addEventListener('DOMContentLoaded', animate())
 
 // startup behaviour - focuses input on load
 
