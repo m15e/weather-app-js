@@ -1,0 +1,67 @@
+Arguments: 
+  /usr/local/Cellar/node/14.8.0/bin/node /usr/local/Cellar/yarn/1.22.4/libexec/bin/yarn.js --watch
+
+PATH: 
+  /usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/2.7.0/bin:/usr/local/opt/ruby/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/lucid/anaconda3/bin:/Users/lucid/anaconda3/condabin:/Users/lucid/google-cloud-sdk/bin:/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/2.7.0/bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  14.8.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/lucid/Desktop/mv-js/weather-app-js/package.json: Unexpected token } in JSON at position 932
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:310:30)
+      at /usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "weather-app",
+    "version": "0.0.1",
+    "description": "weather app to play with OpenWeatherMap API",
+    "main": "webpack.config.js",
+    "scripts": {
+      "build": "webpack",
+      "watch": "webpack --watch"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/m15e/weather-app-js.git"
+    },
+    "keywords": [
+      "javascript",
+      "api",
+      "weather"
+    ],
+    "author": "@m15e",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/m15e/weather-app-js/issues"
+    },
+    "homepage": "https://github.com/m15e/weather-app-js#readme",
+    "devDependencies": {
+      "babel-eslint": "^10.1.0",
+      "eslint": "^6.8.0",
+      "eslint-config-airbnb-base": "^14.1.0",
+      "eslint-plugin-import": "^2.20.2",
+      "stylelint": "^13.3.3",
+      "stylelint-config-standard": "^20.0.0",
+      "stylelint-csstree-validator": "^1.9.0",
+      "stylelint-scss": "^3.17.2",
+      "webpack": "^5.4.0",
+      "webpack-cli": "^4.2.0",
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
