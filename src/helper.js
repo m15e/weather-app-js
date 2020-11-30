@@ -5,9 +5,7 @@ const helpr = (() => {
     });
   };
 
-  const qs = (selector) => {
-    return document.querySelector(selector)
-  }
+  const qs = (selector) => document.querySelector(selector);
 
   const textEl = (elType, elText) => {
     const res = document.createElement(elType);
@@ -34,7 +32,7 @@ const helpr = (() => {
   const nthParent = (elem, n) => (n === 0 ? elem : nthParent(elem.parentNode, n - 1));
 
   return {
-    qs, addChildren, textEl, classyDiv, cel, nthParent
+    qs, addChildren, textEl, classyDiv, cel, nthParent,
   };
 })();
 

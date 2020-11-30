@@ -18,9 +18,7 @@
   ],
   "author": "@m15e",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/m15e/weather-app-js/issues"
-  },
+  "bugs": {},
   "homepage": "https://github.com/m15e/weather-app-js#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",

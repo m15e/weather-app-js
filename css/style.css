@@ -1,11 +1,12 @@
 @-webkit-keyframes pan {
   0% {
     -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    transform: translateX(0%);
   }
+
   100% {
     -webkit-transform: translateX(105%) scaleX(1.3);
-            transform: translateX(105%) scaleX(1.3);
+    transform: translateX(105%) scaleX(1.3);
     opacity: 0.4;
   }
 }
@@ -13,11 +14,12 @@
 @keyframes pan {
   0% {
     -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    transform: translateX(0%);
   }
+
   100% {
     -webkit-transform: translateX(105%) scaleX(1.3);
-            transform: translateX(105%) scaleX(1.3);
+    transform: translateX(105%) scaleX(1.3);
     opacity: 0.4;
   }
 }
@@ -25,34 +27,48 @@
 @-webkit-keyframes panNoFade {
   0% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
+
   100% {
     -webkit-transform: translateX(375px) scaleX(1.1);
-            transform: translateX(375px) scaleX(1.1);
+    transform: translateX(375px) scaleX(1.1);
   }
 }
 
 @keyframes panNoFade {
   0% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
+
   100% {
     -webkit-transform: translateX(375px) scaleX(1.1);
-            transform: translateX(375px) scaleX(1.1);
+    transform: translateX(375px) scaleX(1.1);
   }
 }
 
 .clear-day {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#F84E66), to(#FADE62));
-  background-image: linear-gradient(to bottom, #F84E66 0%, #FADE62 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f84e66), to(#fade62));
+  background-image: linear-gradient(to bottom, #f84e66 0%, #fade62 100%);
+}
+
+.snow .circle {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.partly-cloudy .circle {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
 }
 
 .clear-day .cloud {
   position: relative;
   -webkit-animation: pan 60s linear infinite;
-          animation: pan 60s linear infinite;
+  animation: pan 60s linear infinite;
 }
 
 .clear-day .cloud .circle {
@@ -105,7 +121,7 @@
   height: 270px;
   opacity: 0.2;
   -webkit-animation: ray2 5s infinite;
-          animation: ray2 5s infinite;
+  animation: ray2 5s infinite;
 }
 
 .clear-day .r-two {
@@ -115,7 +131,7 @@
   height: 280px;
   opacity: 0.2;
   -webkit-animation: ray3 7s infinite;
-          animation: ray3 7s infinite;
+  animation: ray3 7s infinite;
 }
 
 .clear-day .r-three {
@@ -125,7 +141,7 @@
   height: 230px;
   opacity: 0.3;
   -webkit-animation: ray4 4s infinite;
-          animation: ray4 4s infinite;
+  animation: ray4 4s infinite;
 }
 
 .clear-day .r-four {
@@ -135,153 +151,163 @@
   height: 240px;
   opacity: 0.3;
   -webkit-animation: ray5 6s infinite;
-          animation: ray5 6s infinite;
+  animation: ray5 6s infinite;
 }
 
 @-webkit-keyframes ray2 {
   0% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
+
   50% {
     -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
     opacity: 0;
   }
+
   100% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 
 @keyframes ray2 {
   0% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
+
   50% {
     -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
     opacity: 0;
   }
+
   100% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 
 @-webkit-keyframes ray3 {
   0% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
+
   50% {
     -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
     opacity: 0;
   }
+
   100% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 
 @keyframes ray3 {
   0% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
+
   50% {
     -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
     opacity: 0;
   }
+
   100% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 
 @-webkit-keyframes ray4 {
   0% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
+
   50% {
     -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
     opacity: 0;
   }
+
   100% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 
 @keyframes ray4 {
   0% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
+
   50% {
     -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
     opacity: 0;
   }
+
   100% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 
 @-webkit-keyframes ray5 {
   0% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
+
   50% {
     -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
     opacity: 0;
   }
+
   100% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 
 @keyframes ray5 {
   0% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
+
   50% {
     -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
     opacity: 0;
   }
+
   100% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 
 .partly-cloudy {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#3EE0F7), to(#5089F4));
-  background-image: linear-gradient(to bottom, #3EE0F7 0%, #5089F4 100%);
-}
-
-.partly-cloudy .circle {
-  position: absolute;
-  background-color: white;
-  border-radius: 50%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3ee0f7), to(#5089f4));
+  background-image: linear-gradient(to bottom, #3ee0f7 0%, #5089f4 100%);
 }
 
 .partly-cloudy .cloudleft {
   position: relative;
   top: 40px;
   -webkit-animation: pan 80s linear infinite;
-          animation: pan 80s linear infinite;
+  animation: pan 80s linear infinite;
 }
 
 .partly-cloudy .cloudleft .c-one {
@@ -303,7 +329,7 @@
   top: 250px;
   left: 45px;
   -webkit-animation: pan 120s linear infinite;
-          animation: pan 120s linear infinite;
+  animation: pan 120s linear infinite;
 }
 
 .partly-cloudy .cloudbottom .c-one {
@@ -337,7 +363,7 @@
   top: 210px;
   left: 350px;
   -webkit-animation: pan 180s linear infinite;
-          animation: pan 180s linear infinite;
+  animation: pan 180s linear infinite;
 }
 
 .partly-cloudy .cloudright .c-one {
@@ -346,8 +372,8 @@
 }
 
 .cloudy {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#A9AEB1), to(#EBECEC));
-  background-image: linear-gradient(to bottom, #A9AEB1 0%, #EBECEC 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#a9aeb1), to(#ebecec));
+  background-image: linear-gradient(to bottom, #a9aeb1 0%, #ebecec 100%);
 }
 
 .cloudy .cloud-one {
@@ -355,7 +381,7 @@
   top: 50px;
   left: -30px;
   -webkit-animation: pan 90s linear infinite;
-          animation: pan 90s linear infinite;
+  animation: pan 90s linear infinite;
 }
 
 .cloudy .cloud-one .circle {
@@ -388,7 +414,7 @@
   top: 180px;
   left: 45px;
   -webkit-animation: pan 60s linear infinite;
-          animation: pan 60s linear infinite;
+  animation: pan 60s linear infinite;
 }
 
 .cloudy .cloud-two .circle {
@@ -421,7 +447,7 @@
   top: 130px;
   left: 290px;
   -webkit-animation: pan 80s linear infinite;
-          animation: pan 80s linear infinite;
+  animation: pan 80s linear infinite;
 }
 
 .cloudy .cloud-three .circle {
@@ -453,7 +479,7 @@
   position: relative;
   top: 245px;
   -webkit-animation: pan 35s linear infinite;
-          animation: pan 35s linear infinite;
+  animation: pan 35s linear infinite;
 }
 
 .cloudy .cloud-four .circle {
@@ -486,7 +512,7 @@
   top: 275px;
   left: 185px;
   -webkit-animation: pan 50s linear infinite;
-          animation: pan 50s linear infinite;
+  animation: pan 50s linear infinite;
 }
 
 .cloudy .cloud-five .circle {
@@ -512,7 +538,7 @@
   top: 305px;
   left: 250px;
   -webkit-animation: pan 30s linear infinite;
-          animation: pan 30s linear infinite;
+  animation: pan 30s linear infinite;
 }
 
 .cloudy .cloud-six .circle {
@@ -545,7 +571,7 @@
   top: 225px;
   left: 298px;
   -webkit-animation: pan 40s linear infinite;
-          animation: pan 40s linear infinite;
+  animation: pan 40s linear infinite;
 }
 
 .cloudy .cloud-seven .circle {
@@ -578,7 +604,7 @@
   left: -375px;
   top: 245px;
   -webkit-animation: pan 35s linear infinite;
-          animation: pan 35s linear infinite;
+  animation: pan 35s linear infinite;
 }
 
 .cloudy .cloud-eight .circle {
@@ -611,7 +637,7 @@
   top: 275px;
   left: -190px;
   -webkit-animation: pan 45s linear infinite;
-          animation: pan 45s linear infinite;
+  animation: pan 45s linear infinite;
 }
 
 .cloudy .cloud-nine .circle {
@@ -637,7 +663,7 @@
   top: 305px;
   left: -125px;
   -webkit-animation: pan 35s linear infinite;
-          animation: pan 35s linear infinite;
+  animation: pan 35s linear infinite;
 }
 
 .cloudy .cloud-ten .circle {
@@ -670,7 +696,7 @@
   top: 225px;
   left: -77px;
   -webkit-animation: pan 65s linear infinite;
-          animation: pan 65s linear infinite;
+  animation: pan 65s linear infinite;
 }
 
 .cloudy .cloud-eleven .circle {
@@ -703,7 +729,7 @@
   top: 130px;
   left: -85px;
   -webkit-animation: pan 40s linear infinite;
-          animation: pan 40s linear infinite;
+  animation: pan 40s linear infinite;
 }
 
 .cloudy .cloud-twelve .circle {
@@ -732,15 +758,15 @@
 }
 
 .rain {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#2DAFF6), to(#75FAE2));
-  background-image: linear-gradient(to bottom, #2DAFF6 0%, #75FAE2 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2daff6), to(#75fae2));
+  background-image: linear-gradient(to bottom, #2daff6 0%, #75fae2 100%);
 }
 
 .rain .cloud-one {
   position: relative;
   top: -65px;
-  -webkit-animation: panNoFade 80s linear infinite;
-          animation: panNoFade 80s linear infinite;
+  -webkit-animation: pannofade 80s linear infinite;
+  animation: panNoFade 80s linear infinite;
 }
 
 .rain .cloud-one .circle {
@@ -780,8 +806,8 @@
   position: relative;
   top: -70px;
   left: -210px;
-  -webkit-animation: panNoFade 70s linear infinite;
-          animation: panNoFade 70s linear infinite;
+  -webkit-animation: pannofade 70s linear infinite;
+  animation: panNoFade 70s linear infinite;
 }
 
 .rain .cloud-two .circle {
@@ -813,8 +839,8 @@
   position: relative;
   top: 275px;
   left: 275px;
-  -webkit-animation: panNoFade 100s linear infinite;
-          animation: panNoFade 100s linear infinite;
+  -webkit-animation: pannofade 100s linear infinite;
+  animation: panNoFade 100s linear infinite;
 }
 
 .rain .cloud-three .circle {
@@ -840,8 +866,8 @@
   left: -200px;
   width: 375px;
   height: 100%;
-  -webkit-animation: panNoFade 70s linear infinite;
-          animation: panNoFade 70s linear infinite;
+  -webkit-animation: pannofade 70s linear infinite;
+  animation: panNoFade 70s linear infinite;
 }
 
 .rain .droplet {
@@ -852,34 +878,36 @@
   background-color: white;
   border-radius: 5px;
   -webkit-animation: fall 3s linear infinite;
-          animation: fall 3s linear infinite;
+  animation: fall 3s linear infinite;
 }
 
 @-webkit-keyframes fall {
   0% {
     -webkit-transform: translate(0, 0) rotate(-8deg);
-            transform: translate(0, 0) rotate(-8deg);
+    transform: translate(0, 0) rotate(-8deg);
   }
+
   100% {
     -webkit-transform: translate(417px, 3000px);
-            transform: translate(417px, 3000px);
+    transform: translate(417px, 3000px);
   }
 }
 
 @keyframes fall {
   0% {
     -webkit-transform: translate(0, 0) rotate(-8deg);
-            transform: translate(0, 0) rotate(-8deg);
+    transform: translate(0, 0) rotate(-8deg);
   }
+
   100% {
     -webkit-transform: translate(417px, 3000px);
-            transform: translate(417px, 3000px);
+    transform: translate(417px, 3000px);
   }
 }
 
 .snow {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#B4D6FC), to(#9CAADE));
-  background-image: linear-gradient(to bottom, #B4D6FC 0%, #9CAADE 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#b4d6fc), to(#9caade));
+  background-image: linear-gradient(to bottom, #b4d6fc 0%, #9caade 100%);
 }
 
 .snow .snowflake-container {
@@ -898,21 +926,15 @@
   border-radius: 50%;
   z-index: 9999;
   -webkit-animation: snowfalling 10s linear infinite, snowdrifting 4s ease-in-out infinite;
-          animation: snowfalling 10s linear infinite, snowdrifting 4s ease-in-out infinite;
-}
-
-.snow .circle {
-  position: absolute;
-  background-color: white;
-  border-radius: 50%;
+  animation: snowfalling 10s linear infinite, snowdrifting 4s ease-in-out infinite;
 }
 
 .snow .cloud-one {
   position: relative;
   top: 255px;
   left: -100px;
-  -webkit-animation: panNoFade 80s linear infinite;
-          animation: panNoFade 80s linear infinite;
+  -webkit-animation: pannofade 80s linear infinite;
+  animation: panNoFade 80s linear infinite;
 }
 
 .snow .cloud-one .circle {
@@ -944,6 +966,7 @@
   0% {
     top: -20%;
   }
+
   100% {
     top: 120%;
   }
@@ -953,6 +976,7 @@
   0% {
     top: -20%;
   }
+
   100% {
     top: 120%;
   }
@@ -961,44 +985,46 @@
 @-webkit-keyframes snowdrifting {
   0% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
+
   50% {
     -webkit-transform: translateX(40px);
-            transform: translateX(40px);
+    transform: translateX(40px);
   }
+
   100% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
 @keyframes snowdrifting {
   0% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
+
   50% {
     -webkit-transform: translateX(40px);
-            transform: translateX(40px);
+    transform: translateX(40px);
   }
+
   100% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .weather-container {
@@ -1011,7 +1037,7 @@
   overflow: hidden;
   color: #fff;
   -webkit-box-shadow: 0 50px 100px rgba(50, 50, 93, 0.05), 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 50px 100px rgba(50, 50, 93, 0.05), 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 50px 100px rgba(50, 50, 93, 0.05), 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .weather-container h2,
@@ -1030,7 +1056,9 @@
   font-size: 1.4rem;
 }
 
-#locQuery, #getWeather, .weather-container {
+#locQuery,
+#getWeather,
+.weather-container {
   border-radius: 12px !important;
 }
 
@@ -1049,13 +1077,11 @@
 }
 
 .top-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 80%;
   margin: 0 auto;
 }
@@ -1070,7 +1096,8 @@
   margin: 2rem auto 0;
 }
 
-.logo-container .weather-word, .logo-container .app-word {
+.logo-container .weather-word,
+.logo-container .app-word {
   position: relative;
   bottom: 45px;
   font-size: 3.5rem;
