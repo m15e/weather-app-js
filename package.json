@@ -4,8 +4,8 @@
   "description": "weather app to play with OpenWeatherMap API",
   "main": "webpack.config.js",
   "scripts": {
-    "build": "webpack",
-    "watch": "webpack --watch"
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
