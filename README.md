@@ -9,7 +9,7 @@ The purpose of this project is to demonstrate competence in fetching and handlin
 Retrieving the weather data also involves the use of Asynchronous JavaScript, to ensure the proper ordering and execution of tasks.
 
 ## Live Demo
-To quickly see the project in action, check the [Live Demo](http://raw.githack.com/m15e/weather-app-js/api-features/dist/index.html).
+To quickly see the project in action, check the [Live Demo](http://raw.githack.com/m15e/weather-app-js/development/dist/index.html).
 
 ## Built With
 
