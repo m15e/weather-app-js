@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What Weather?</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/css-toggle-switch@latest/dist/toggle-switch.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Chicle&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="main-content">
+    <!-- switch -->
+    <label class="switch-light switch-material">
+      <input type="checkbox">
+
+      <strong>
+        Switch F°/C°
+      </strong>
+
+      <span>
+        <span>C</span>
+        <span>F°</span>
+        <a></a>
+      </span>
+    </label>
+    <div class="top-container">
+      <div class="logo-container">
+        <a href="#"><span class="weather-word">What</span><img src="../src/img/logo.svg" alt="logo"><span
+            class="app-word">Weather?</span></a>
+        <p>Enter a location to get the weather there 🙂</p>
+      </div>
+      <div class='input-container columns'>
+        <div class="column is-3 is-offset-4">
+          <input class='input' type="text" id='locQuery' placeholder="Enter a city">
+        </div>
+        <div class="column is-4">
+          <button class='button btn-bg' id='getWeather'>Get It!</button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="weather-container clear-day">
+        <div class="sun"></div>
+        <div class="sun-ray r-one"></div>
+        <div class="sun-ray r-two"></div>
+        <div class="sun-ray r-three"></div>
+        <div class="sun-ray r-four"></div>
+        <div class="cloud">
+          <div class="circle c-one"></div>
+          <div class="circle c-two"></div>
+          <div class="circle c-three"></div>
+        </div>
+      </div>
+      <div class="weather-container snow">
+        <div class="cloud-one">
+          <div class="circle c-one"></div>
+          <div class="circle c-two"></div>
+          <div class="circle c-three"></div>
+        </div>
+        <div class="snowflake-container"></div>
+      </div>
+      <div class="weather-container cloudy">
+        <div class="cloud-one">
+          <div class="circle c-one"></div>
+          <div class="circle c-two"></div>
+          <div class="circle c-three"></div>
+        </div>
+        <div class="cloud-two">
+          <div class="circle c-one"></div>
+          <div class="circle c-two"></div>
+          <div class="circle c-three"></div>
+        </div>
+        <div class="cloud-three">
+          <div class="circle c-one"></div>
+          <div class="circle c-two"></div>
+          <div class="circle c-three"></div>
+        </div>
+        <div class="cloud-four">
+          <div class="circle c-one"></div>
+          <div class="circle c-two"></div>
+          <div class="circle c-three"></div>
+        </div>
+        <div class="cloud-five">
+          <div class="circle c-one"></div>
+          <div class="circle c-two"></div>
+          <div class="circle c-three"></div>
+        </div>
+        <div class="cloud-six">
+          <div class="circle c-one"></div>
+          <div class="circle c-two"></div>
+          <div class="circle c-three"></div>
+        </div>
+        <div class="cloud-seven">
+          <div class="circle c-one"></div>
+          <div class="circle c-two"></div>
+          <div class="circle c-three"></div>
+        </div>
+        <div class="cloud-eight">
+          <div class="circle c-one"></div>
+          <div class="circle c-two"></div>
+          <div class="circle c-three"></div>
+        </div>
+        <div class="cloud-nine">
+          <div class="circle c-one"></div>
+          <div class="circle c-two"></div>
+          <div class="circle c-three"></div>
+        </div>
+        <div class="cloud-ten">
+          <div class="circle c-one"></div>
+          <div class="circle c-two"></div>
+          <div class="circle c-three"></div>
+        </div>
+        <div class="cloud-eleven">
+          <div class="circle c-one"></div>
+          <div class="circle c-two"></div>
+          <div class="circle c-three"></div>
+        </div>
+        <div class="cloud-twelve">
+          <div class="circle c-one"></div>
+          <div class="circle c-two"></div>
+          <div class="circle c-three"></div>
+        </div>
+      </div>
+      <div class="weather-container rain">
+        <div class="cloud-one">
+          <div class="circle c-one"></div>
+          <div class="circle c-two"></div>
+          <div class="circle c-three"></div>
+          <div class="circle c-four"></div>
+        </div>
+        <div class="cloud-two">
+          <div class="circle c-one"></div>
+          <div class="circle c-two"></div>
+          <div class="circle c-three"></div>
+        </div>
+        <div class="cloud-three">
+          <div class="circle c-one"></div>
+          <div class="circle c-two"></div>
+        </div>
+        <div class="droplet-container"></div>
+      </div>
+      <div class="weather-container partly-cloudy">
+        <div class="cloudleft">
+          <div class="circle c-one"></div>
+          <div class="circle c-two"></div>
+        </div>
+        <div class="cloudbottom">
+          <div class="circle c-one"></div>
+          <div class="circle c-two"></div>
+          <div class="circle c-three"></div>
+          <div class="circle c-four"></div>
+        </div>
+        <div class="cloudright">
+          <div class="circle c-one"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
+
+<!-- https://github.com/vai0/alarmclockweather_animations -->
